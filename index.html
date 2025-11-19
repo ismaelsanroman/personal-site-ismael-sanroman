@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ismael Sanromán | Senior SDET & QA Engineer</title>
+    <meta name="description"
+          content="Ismael Sanromán - Senior SDET especializado en automatización, calidad de software, CI/CD y testing de sistemas de IA." />
+
+    <!-- Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: "#0a2742",
+                        accent: "#00b3c9",
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+<!-- Navbar -->
+<header class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
+        <a href="#inicio" class="flex items-center gap-3">
+            <img src="assets/logo-ismael-sanroman.png" alt="Logo Ismael Sanromán" class="h-10 w-auto" />
+            <span class="hidden sm:inline text-sm font-medium tracking-[0.2em] text-slate-500 uppercase">
+          Ismael Sanromán
+        </span>
+        </a>
+        <div class="flex items-center gap-6 text-sm font-medium text-slate-700">
+            <a href="#sobre-mi" class="hover:text-brand transition-colors">Sobre mí</a>
+            <a href="#skills" class="hover:text-brand transition-colors">Skills</a>
+            <a href="#experiencia" class="hover:text-brand transition-colors">Experiencia</a>
+            <a href="#contenido" class="hover:text-brand transition-colors">Artículos & Charlas</a>
+            <a href="#portfolio" class="hover:text-brand transition-colors">Portfolio</a>
+            <a href="#contacto" class="hover:text-brand transition-colors">Contacto</a>
+        </div>
+    </nav>
+</header>
+
+<main class="pt-20">
+    <!-- Hero -->
+    <section id="inicio" class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-brand/5 via-white to-accent/5 pointer-events-none"></div>
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative">
+            <div class="grid gap-12 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] items-center">
+                <div>
+                    <p class="text-xs font-semibold tracking-[0.3em] text-brand uppercase mb-4">Quality Engineering · Test Automation · AI Systems Testing</p>
+                    <p class="text-lg sm:text-xl text-slate-700 mb-6 max-w-xl">
+                        Senior SDET especializado en <strong>automatización de pruebas, calidad de software, CI/CD</strong> y
+                        <strong>testing de sistemas basados en IA</strong>. Diseño frameworks escalables y pipelines de calidad
+                        para productos críticos.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-8">
+              <span class="inline-flex items-center rounded-full bg-brand/5 px-3 py-1 text-xs font-medium text-brand">
+                🧪 Test Automation
+              </span>
+                        <span class="inline-flex items-center rounded-full bg-brand/5 px-3 py-1 text-xs font-medium text-brand">
+                🤖 AI Systems Testing
+              </span>
+                        <span class="inline-flex items-center rounded-full bg-brand/5 px-3 py-1 text-xs font-medium text-brand">
+                ⚙️ CI/CD & DevOps
+              </span>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contacto"
+                           class="inline-flex items-center justify-center rounded-full bg-brand px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand/90 transition">
+                            Hablemos de calidad
+                        </a>
+                        <a href="#skills"
+                           class="inline-flex items-center justify-center rounded-full border border-slate-300 px-6 py-2.5 text-sm font-semibold text-slate-800 hover:border-brand hover:text-brand transition">
+                            Ver stack y skills
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:justify-self-end">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-accent/10 blur-2xl rounded-3xl"></div>
+                        <div class="relative rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm flex flex-col gap-4">
+                            <div class="flex items-center gap-4">
+                                <div
+                                        class="h-14 w-14 rounded-2xl bg-brand/5 border border-brand/10 flex items-center justify-center">
+                                    <img src="assets/logo-ismael-sanroman.png" alt="Logo Ismael" class="h-10 w-auto" />
+                                </div>
+                                <div>
+                                    <p class="text-xs font-medium uppercase tracking-[0.2em] text-slate-500">Rol principal</p>
+                                    <p class="text-sm font-semibold text-slate-900">Senior SDET · Quality Engineering</p>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-3 text-xs">
+                                <div class="rounded-2xl bg-slate-50 border border-slate-200 p-3">
+                                    <p class="font-semibold text-slate-700 mb-1">Sectores</p>
+                                    <p class="text-slate-600">Banca (Santander), Telco (Telefónica), consultoría tecnológica.</p>
+                                </div>
+                                <div class="rounded-2xl bg-slate-50 border border-slate-200 p-3">
+                                    <p class="font-semibold text-slate-700 mb-1">Foco actual</p>
+                                    <p class="text-slate-600">Testing de sistemas de IA, frameworks de automatización y CI/CD.</p>
+                                </div>
+                            </div>
+                            <div class="rounded-2xl bg-slate-900 text-slate-50 p-3 text-xs flex flex-col gap-1">
+                                <p class="font-semibold">
+                                    🎯 Enfoque
+                                </p>
+                                <p class="text-slate-200">
+                                    Llevar estabilidad, eficiencia y calidad a los equipos de desarrollo mediante una ingeniería de
+                                    testing sólida y medible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="py-16 sm:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 mb-4 flex items-center gap-2">
+                    <span>Sobre mí</span>
+                </h2>
+                <p class="text-slate-700 leading-relaxed mb-4">
+                    Soy Senior SDET con experiencia en <strong>automatización de pruebas, calidad de software, CI/CD, testing
+                    backend, APIs, UI</strong> y <strong>validación de sistemas basados en IA</strong>. Me especializo en
+                    diseñar <strong>frameworks escalables</strong>, <strong>pipelines de calidad</strong> y estrategias de test
+                    robustas para productos críticos en sectores como banca y telecomunicaciones.
+                </p>
+                <p class="text-slate-700 leading-relaxed mb-4">
+                    He trabajado en equipos multidisciplinares construyendo soluciones de testing para:
+                </p>
+                <ul class="list-disc list-inside text-slate-700 space-y-1 mb-4">
+                    <li><strong>Banco Santander</strong>: AI Systems Testing, validación de modelos ML, evaluación de LLM/SLM.</li>
+                    <li><strong>Telefónica</strong>: automatización frontend y backend, pipelines en Jenkins.</li>
+                    <li><strong>UST, Minsait, Sngular</strong>: QA Automation, performance, CI/CD y arquitectura de testing.</li>
+                </ul>
+                <p class="text-slate-700 leading-relaxed">
+                    Mi objetivo es que la calidad no sea un freno, sino un <strong>acelerador del desarrollo</strong>, con
+                    métricas claras, pipelines automatizados y una estrategia de testing alineada con negocio.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-16 sm:py-20 bg-white border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-end justify-between gap-6 mb-8">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 mb-2 flex items-center gap-2">
+                        <span>Skills & Tech Stack</span>
+                    </h2>
+                    <p class="text-slate-600 max-w-2xl">
+                        Un stack centrado en <strong>automatización, backend testing, CI/CD</strong> y
+                        <strong>validación de sistemas de IA</strong>. Aquí tienes un resumen agrupado por áreas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-2">
+                <!-- Test Automation -->
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+                    <h3 class="text-sm font-semibold text-slate-900 mb-2 flex items-center gap-2">🧪 Test Automation</h3>
+                    <p class="text-xs text-slate-600 mb-3">E2E, UI, API y performance.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Playwright</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Selenium</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Cypress</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Rest Assured</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Toolium</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Talos BDD</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Postman / Newman</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Xray</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">JMeter</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Locust</span>
+                    </div>
+                </div>
+
+                <!-- Languages & Backend Testing -->
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+                    <h3 class="text-sm font-semibold text-slate-900 mb-2 flex items-center gap-2">💻 Lenguajes & Backend
+                        Testing</h3>
+                    <p class="text-xs text-slate-600 mb-3">Diseño de suites API y frameworks backend.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Python</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">TypeScript</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Java</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">pytest</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">requests</span>
+                    </div>
+                </div>
+
+                <!-- API & Frameworks -->
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+                    <h3 class="text-sm font-semibold text-slate-900 mb-2 flex items-center gap-2">🧰 Frameworks & API
+                        Development</h3>
+                    <p class="text-xs text-slate-600 mb-3">Diseño y testing de APIs REST.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Flask</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">FastAPI</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Mocking & Utilities -->
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+                    <h3 class="text-sm font-semibold text-slate-900 mb-2 flex items-center gap-2">🧩 Mocking & Testing
+                        Utilities</h3>
+                    <p class="text-xs text-slate-600 mb-3">Mocks, stubs y pruebas unitarias.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Mockito</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">unittest.mock</span>
+                    </div>
+                </div>
+
+                <!-- DevOps & CI/CD -->
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+                    <h3 class="text-sm font-semibold text-slate-900 mb-2 flex items-center gap-2">⚙️ DevOps, CI/CD &
+                        Infraestructura</h3>
+                    <p class="text-xs text-slate-600 mb-3">Integración de la calidad en el pipeline.</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">GitHub Actions</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Jenkins</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">GitLab CI</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">SonarQube</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Docker</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Kubernetes</span>
+                    </div>
+                </div>
+
+                <!-- Observability & AI Testing -->
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+                    <h3 class="text-sm font-semibold text-slate-900 mb-2 flex items-center gap-2">📊 Observabilidad & AI
+                        Testing</h3>
+                    <p class="text-xs text-slate-600 mb-3">Monitoreo, logs y sistemas de IA.</p>
+                    <div class="flex flex-wrap gap-2 text-xs mb-2">
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Grafana</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">Kibana</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">LLM Testing</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">SLM Validation</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">MLOps</span>
+                        <span class="px-2.5 py-1 rounded-full bg-white border border-slate-200">AI Agents</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="py-16 sm:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-end justify-between gap-6 mb-8">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 mb-2 flex items-center gap-2">
+                        <span>Experiencia</span>
+                    </h2>
+                    <p class="text-slate-600 max-w-2xl">
+                        Roles de <strong>Senior SDET</strong> y <strong>QA Automation</strong> en proyectos de alta criticidad,
+                        con foco en automatización, performance y calidad integrada en el ciclo de vida.
+                    </p>
+                </div>
+            </div>
+
+            <div class="space-y-6 border-l border-slate-200 pl-5">
+                <!-- Santander -->
+                <article class="relative">
+                    <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full border-2 border-brand bg-white"></div>
+                    <h3 class="text-sm font-semibold text-slate-900">Banco Santander · AI Systems Testing</h3>
+                    <p class="text-xs text-slate-500 mb-1">Senior SDET / QA Engineer · Sistemas de IA</p>
+                    <ul class="text-sm text-slate-700 list-disc list-inside space-y-1">
+                        <li>Diseño de estrategias de testing para sistemas basados en LLM/SLM y modelos de ML.</li>
+                        <li>Automatización de la evaluación de respuestas y verificación de calidad en pipelines de MLOps.</li>
+                        <li>Definición de KPIs de calidad y métricas para modelos generativos.</li>
+                    </ul>
+                </article>
+
+                <!-- Telefónica -->
+                <article class="relative">
+                    <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full border-2 border-brand bg-white"></div>
+                    <h3 class="text-sm font-semibold text-slate-900">Telefónica</h3>
+                    <p class="text-xs text-slate-500 mb-1">QA Automation · Frontend & Backend</p>
+                    <ul class="text-sm text-slate-700 list-disc list-inside space-y-1">
+                        <li>Automatización de pruebas E2E y APIs en entornos de alto tráfico.</li>
+                        <li>Implementación de pipelines de calidad en Jenkins.</li>
+                        <li>Integración de test de regresión y smoke en CI/CD.</li>
+                    </ul>
+                </article>
+
+                <!-- UST / Minsait / Sngular -->
+                <article class="relative">
+                    <div class="absolute -left-[9px] top-1 h-4 w-4 rounded-full border-2 border-brand bg-white"></div>
+                    <h3 class="text-sm font-semibold text-slate-900">UST · Minsait · Sngular</h3>
+                    <p class="text-xs text-slate-500 mb-1">QA Automation · Performance · CI/CD</p>
+                    <ul class="text-sm text-slate-700 list-disc list-inside space-y-1">
+                        <li>Diseño de frameworks de automatización multi-tecnología.</li>
+                        <li>Pruebas de carga y performance (JMeter, Locust).</li>
+                        <li>Definición de buenas prácticas de testing, cobertura y calidad de código.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artículos & Charlas -->
+    <section id="contenido" class="py-16 sm:py-20 bg-white border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-end justify-between gap-6 mb-8">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 mb-2 flex items-center gap-2">
+                        <span>Artículos & Charlas</span>
+                    </h2>
+                    <p class="text-slate-600 max-w-2xl">
+                        Contenido sobre <strong>automatización, complejidad, calidad de software</strong> y
+                        <strong>testing de sistemas de IA</strong>. Aquí puedes enlazar tus artículos de LinkedIn, charlas o
+                        formaciones.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Card ejemplo 1 -->
+                <article
+                        class="rounded-3xl border border-slate-200 bg-slate-50 p-4 flex flex-col justify-between hover:border-brand hover:-translate-y-1 hover:shadow-sm transition">
+                    <div>
+                        <p class="text-[11px] font-semibold tracking-[0.18em] text-brand uppercase mb-2">Artículo</p>
+                        <h3 class="text-sm font-semibold text-slate-900 mb-2">Complejidad ciclomática como KPI de calidad</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            Uso de la complejidad ciclomática como métrica accionable en pipelines de CI/CD para mantener el código
+                            limpio y mantenible.
+                        </p>
+                    </div>
+                    <a href="#" class="mt-2 text-xs font-semibold text-brand hover:underline">Ver en LinkedIn →</a>
+                </article>
+
+                <!-- Card ejemplo 2 -->
+                <article
+                        class="rounded-3xl border border-slate-200 bg-slate-50 p-4 flex flex-col justify-between hover:border-brand hover:-translate-y-1 hover:shadow-sm transition">
+                    <div>
+                        <p class="text-[11px] font-semibold tracking-[0.18em] text-brand uppercase mb-2">Artículo</p>
+                        <h3 class="text-sm font-semibold text-slate-900 mb-2">Frameworks de automatización centrados en calidad</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            Buenas prácticas para diseñar frameworks de testing escalables, legibles y fáciles de mantener en
+                            equipos de producto.
+                        </p>
+                    </div>
+                    <a href="#" class="mt-2 text-xs font-semibold text-brand hover:underline">Ver en LinkedIn →</a>
+                </article>
+
+                <!-- Card ejemplo 3 -->
+                <article
+                        class="rounded-3xl border border-slate-200 bg-slate-50 p-4 flex flex-col justify-between hover:border-brand hover:-translate-y-1 hover:shadow-sm transition">
+                    <div>
+                        <p class="text-[11px] font-semibold tracking-[0.18em] text-brand uppercase mb-2">Charla</p>
+                        <h3 class="text-sm font-semibold text-slate-900 mb-2">Estrategias de testing para sistemas de IA</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            Enfoques para validar modelos generativos, definir escenarios críticos y medir la calidad de sistemas
+                            basados en LLMs.
+                        </p>
+                    </div>
+                    <a href="#" class="mt-2 text-xs font-semibold text-brand hover:underline">Próximamente</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / GitHub -->
+    <section id="portfolio" class="py-16 sm:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-end justify-between gap-6 mb-8">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 mb-2 flex items-center gap-2">
+                        <span>Portfolio & Código</span>
+                    </h2>
+                    <p class="text-slate-600 max-w-2xl">
+                        La mayoría de mis proyectos, experimentos y frameworks de testing los encontrarás en mi perfil de GitHub.
+                        Aquí podrás ver cómo trabajo a nivel de <strong>estructura, calidad, tests y CI/CD</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] items-start">
+                <div
+                        class="rounded-3xl border border-slate-200 bg-slate-50 p-5 flex flex-col justify-between h-full max-md:order-2">
+                    <div>
+                        <h3 class="text-sm font-semibold text-slate-900 mb-2">Repositorio principal</h3>
+                        <p class="text-sm text-slate-700 mb-4">
+                            En mi perfil encontrarás proyectos de <strong>test automation con Playwright, Cypress, Selenium,
+                            pytest</strong>, frameworks para <strong>testing de APIs</strong>, pruebas de performance y ejemplos de
+                            <strong>pipelines CI/CD</strong>.
+                        </p>
+                        <ul class="text-xs text-slate-700 list-disc list-inside space-y-1 mb-4">
+                            <li>Frameworks de automatización end-to-end.</li>
+                            <li>Proyectos de backend testing y APIs.</li>
+                            <li>Ejemplos de testing para sistemas de IA.</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/ismaelsanroman" target="_blank" rel="noopener"
+                       class="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 text-xs font-semibold text-white mt-2 hover:bg-brand transition">
+                        Ver GitHub → github.com/ismaelsanroman
+                    </a>
+                </div>
+
+                <div class="rounded-3xl border border-dashed border-slate-300 bg-white p-5 max-md:order-1">
+                    <p class="text-[11px] font-semibold tracking-[0.18em] text-slate-500 uppercase mb-2">Idea</p>
+                    <h3 class="text-sm font-semibold text-slate-900 mb-2">Proyectos destacados (para más adelante)</h3>
+                    <p class="text-xs text-slate-600 mb-3">
+                        Aquí puedes añadir más adelante tarjetas con proyectos concretos: nombre, stack y enlace directo al repo.
+                    </p>
+                    <ul class="text-xs text-slate-700 list-disc list-inside space-y-1">
+                        <li>Framework de testing para sistemas de IA.</li>
+                        <li>Proyecto de contract testing con Python.</li>
+                        <li>Framework de automatización full-stack con Playwright.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos / Certificaciones -->
+    <section class="py-16 sm:py-20 bg-slate-900 text-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-end justify-between gap-6 mb-8">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-semibold mb-2 flex items-center gap-2">
+                        <span>Formación, cursos & certificaciones</span>
+                    </h2>
+                    <p class="text-sm text-slate-300 max-w-2xl">
+                        Combinación de formación técnica, IA, seguridad y marcos Agile para acompañar la calidad de extremo a
+                        extremo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-3 text-xs">
+                <div class="rounded-3xl bg-slate-800 border border-slate-700 p-4">
+                    <p class="font-semibold mb-2 flex items-center gap-1">👨‍💻 Técnicas</p>
+                    <ul class="space-y-1 text-slate-200">
+                        <li>Playwright Automation (Python).</li>
+                        <li>CI/CD for Testers: Jenkins & GitHub Actions.</li>
+                        <li>Selenium + Java + Cucumber.</li>
+                        <li>Cypress E2E Automation.</li>
+                        <li>AWS Solutions Architect Associate (Training).</li>
+                    </ul>
+                </div>
+
+                <div class="rounded-3xl bg-slate-800 border border-slate-700 p-4">
+                    <p class="font-semibold mb-2 flex items-center gap-1">🤖 Inteligencia Artificial</p>
+                    <ul class="space-y-1 text-slate-200">
+                        <li>Bootcamp IA Generativa, LLM Apps & Agentes IA.</li>
+                        <li>Curso de Desarrollo con IA.</li>
+                        <li>MLOps y validación de modelos aplicada a QA.</li>
+                    </ul>
+                </div>
+
+                <div class="rounded-3xl bg-slate-800 border border-slate-700 p-4">
+                    <p class="font-semibold mb-2 flex items-center gap-1">🔐 Seguridad, QA & Agile</p>
+                    <ul class="space-y-1 text-slate-200">
+                        <li>Cybersecurity Awareness Certification.</li>
+                        <li>ISTQB CTFL (Testing Foundation).</li>
+                        <li>Professional Scrum Master (SFPC).</li>
+                        <li>Business Model Canvas Essentials (BMCEPC).</li>
+                        <li>International Diploma in Business Analysis (BIFPC).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-16 sm:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-10 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] items-start">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-slate-900 mb-3 flex items-center gap-2">
+                        <span>Contacto</span>
+                    </h2>
+                    <p class="text-slate-600 mb-6 max-w-xl">
+                        Si quieres hablar sobre <strong>calidad de software, automatización, testing para sistemas de IA</strong>
+                        o colaborar en algún proyecto, puedes contactarme directamente por LinkedIn o GitHub.
+                    </p>
+
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-center gap-3">
+                            <span class="h-8 w-8 rounded-full bg-brand/10 flex items-center justify-center">in</span>
+                            <a href="https://www.linkedin.com/in/ismael-sanroman-sanchez/" target="_blank" rel="noopener"
+                               class="font-medium text-brand hover:underline">
+                                linkedin.com/in/ismael-sanroman-sanchez
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="h-8 w-8 rounded-full bg-slate-900 text-white flex items-center justify-center">GH</span>
+                            <a href="https://github.com/ismaelsanroman" target="_blank" rel="noopener"
+                               class="font-medium text-brand hover:underline">
+                                github.com/ismaelsanroman
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5">
+                    <p class="text-[11px] font-semibold tracking-[0.18em] text-slate-500 uppercase mb-3">Formulario simple
+                        (opcional)</p>
+                    <form class="space-y-3 text-sm">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-600 mb-1">Nombre</label>
+                            <input type="text" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm"
+                                   placeholder="Tu nombre" />
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-600 mb-1">Email</label>
+                            <input type="email" class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm"
+                                   placeholder="tucorreo@ejemplo.com" />
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-600 mb-1">Mensaje</label>
+                            <textarea rows="4"
+                                      class="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm resize-none"
+                                      placeholder="Cuéntame brevemente en qué puedo ayudarte"></textarea>
+                        </div>
+                        <button type="button"
+                                class="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 text-xs font-semibold text-white hover:bg-brand transition">
+                            Enviar (pendiente de backend)
+                        </button>
+                        <p class="text-[11px] text-slate-500 mt-1">
+                            *El envío de este formulario requiere configurar un pequeño backend o servicio externo (Formspree,
+                            Getform, etc.).
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="border-t border-slate-200 bg-white py-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-xs text-slate-500">© <span id="year"></span> Ismael Sanromán. Calidad, automatización y sistemas
+            de IA.</p>
+        <p class="text-[11px] text-slate-400">Diseño ligero, sin frameworks pesados. HTML + Tailwind.</p>
+    </div>
+</footer>
+
+<button id="scrollTopBtn"
+        class="hidden fixed bottom-6 right-6 bg-brand text-white rounded-full w-12 h-12 shadow-lg flex items-center justify-center text-lg hover:bg-brand/90 transition">
+    ↑
+</button>
+
+<script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            scrollBtn.classList.remove("hidden");
+        } else {
+            scrollBtn.classList.add("hidden");
+        }
+    });
+
+    scrollBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+
+<script>
+    // Año dinámico
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+
+</html>
