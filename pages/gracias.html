@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Gracias por tu mensaje! | Ismael Sanromán</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: "#0a2742",
+                        accent: "#00b3c9",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-slate-50 text-slate-900 flex items-center justify-center min-h-screen p-6">
+<div class="text-center max-w-md mx-auto">
+
+    <!-- Círculo con icono -->
+    <div class="mb-6 flex justify-center">
+        <div class="h-24 w-24 rounded-full bg-gradient-to-br from-brand/10 to-accent/20 flex items-center justify-center shadow-md">
+            <span class="text-5xl">✅</span>
+        </div>
+    </div>
+
+    <h1 class="text-3xl font-bold text-slate-900 mb-4">¡Gracias por tu mensaje!</h1>
+
+    <p class="text-slate-600 mb-6 leading-relaxed">
+        He recibido tu mensaje correctamente. Te responderé lo antes posible.
+        <br />
+        Mientras tanto, puedes volver a la página principal o visitar mi perfil profesional.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-3 justify-center mt-6">
+        <a href="../index.html"
+           class="inline-flex items-center justify-center rounded-full bg-brand px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand/90 transition">
+            Volver a la página
+        </a>
+
+        <a href="https://www.linkedin.com/in/ismael-sanroman-sanchez/" target="_blank"
+           class="inline-flex items-center justify-center rounded-full border border-slate-300 px-6 py-2.5 text-sm font-semibold text-slate-800 hover:border-brand hover:text-brand transition">
+            Ir a LinkedIn
+        </a>
+    </div>
+
+</div>
+</body>
+</html>
